@@ -14,4 +14,4 @@ sh.exe.stackdump
 # logs & tmp file
 *.swp
 /docs/build/*
-!.gitkeep
+!docs/build/.keep
