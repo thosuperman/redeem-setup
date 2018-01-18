@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Setup Swap ..."
+echo "Setup swap ..."
 echo
 
 ## Setup variables
@@ -28,8 +28,11 @@ echo
 sudo yum group install -y "Development Tools"
 sudo yum install -y epel-release
 sudo yum install -y openssl git vim wget net-tools telnet nano
+
+echo "Install NTP and set UTC timezone ..."
+echo
 sudo yum install -y ntp
-sudo timedatectl set-timezone UTC
+timedatectl set-timezone UTC
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
 
