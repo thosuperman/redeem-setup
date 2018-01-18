@@ -1,20 +1,38 @@
-Redeem Server Setup Guide
+Getting Started
 ========
 
-Server Requirements
+This document will show you how to setup Redeem Server.
+
+OS requirement
+--------
+- CentOS 7.x
+
+Server specifications
 --------
 
-- Web Server (2 CPU, 4 GB RAM, 60 GB SSD)
-- API Server (2 CPU, 4 GB RAM, 60 GB SSD)
-- Database Server (4 CPU, 8 GB RAM, 100 GB SSD)
-- Smart Contract API (4 CPU, 8 GB RAM, 100 GB SSD)
-- ETH Full Node Server (6 CPU, 12 GB RAM, 300 GB SSD)
-- Monitor Server (2 CPU, 4 GB RAM, 60 GB SSD)
++---------------------+------------+-----------+-----------+
+| Server              | CPU Cores  | RAM       | SSD       |
++=====================+============+===========+===========+
+| WEB                 | 2          | 4 GB      | 60 GB     |
++---------------------+------------+-----------+-----------+
+| API                 | 2          | 4 GB      | 60 GB     |
++---------------------+------------+-----------+-----------+
+| Database            | 4          | 8 GB      | 100 GB    |
++---------------------+------------+-----------+-----------+
+| Smart Contract API  | 4          | 8 GB      | 100 GB    |
++---------------------+------------+-----------+-----------+
+| ETH Full Node       | 6          | 12 GB     | 300 GB    |
++---------------------+------------+-----------+-----------+
+| Monitor Service     | 2          | 4 GB      | 60 GB     |
++---------------------+------------+-----------+-----------+
+
 
 Recommendation
 --------
-- AWS (https://aws.amazon.com/)
+- AWS (https://aws.amazon.com)
+- Microsoft Azure (https://azure.microsoft.com)
+- Vultr (https://www.vultr.com)
 
 Notes
 --------
-- This setup guide base on AWS.
+- This guide using **AWS** *CentOS 7 (x86_64) - with Updates HVM*
